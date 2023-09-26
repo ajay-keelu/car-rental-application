@@ -1,0 +1,101 @@
+.ownerDashboard{
+    height: 100vh;
+    width: 100%;
+    background:#2b347c;
+    display: flex;
+}
+.ownerDashboard .sideNav{
+    min-height: 50vh;
+    max-height: 100vh;
+    background: #262f72;
+    width:200px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: inset 10px 10px 6px 5px #313c88d8,
+                inset -10px -10px 6px 5px #313c88d8;
+}
+.ownerDashboard .sideNav .header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #d3d0d0;
+}
+.ownerDashboard .logo{
+    color: rgb(255, 251, 0);
+}
+.ownerDashboard .logoOw{
+    color: #fff;
+}
+.ownerDashboard .sideNav .header span{
+    color: rgb(247, 214, 30) ;
+}
+.ownerDashboard .sideNav .header span span{
+    color: orange !important;
+}
+.ownerDashboard .sideNav .linkSide.active{
+    color:rgb(132, 216, 22);
+    font-weight:400;
+    /* text-transform: uppercase; */
+
+}
+.ownerDashboard .sideNav .linkSide.active::before{
+    content: '';
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(238, 177, 10);
+    position: absolute;
+    width: 100%;
+    scale: 1;
+    bottom: -5px;
+    transition: width .3s ease-in;
+}
+.ownerDashboard .sideNav .linkSide{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    height: 40px;
+    display: flex;
+    align-items: end;
+    width: 'fit-content';
+    transition: all .1s ease-in-out;
+    position: relative;
+}
+.ownerDashboard .sideNav .linkSide::before{
+    content: '';
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    scale: 0;
+    transform-origin: right;
+    transition: scale .3s ease-in;
+}
+.ownerDashboard .sideNav .linkSide:hover:before{
+    scale: 1;
+    transform-origin: left;
+}
+
+.ownerDashboard .sideNavContent{
+    width:calc(100vw - 200px) ;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(230, 228, 228);
+    box-shadow: inset 0px 10px 6px 5px #f0f0f3bd,
+                inset -10px -10px 6px 5px #f4f4f5b0;
+
+}
+.ownerDashboard .log{
+    color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}

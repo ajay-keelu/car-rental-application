@@ -1,0 +1,75 @@
+.transaction{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82vw;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.transaction .trans-details{
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.transaction .trans-details .divi:has(div){
+    min-height: 300px;
+    width:450px; 
+    background: #fff;
+    box-shadow: 0px 12px 18px 3px rgba(0,0,0,.3);
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.transaction .trans-details .divi div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.transaction .trans-details .divi:has(img){
+    height: 300px;
+    width:450px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transaction .trans-details .divi img{
+    height: 250px;
+}
+.transaction .trans-details .divi .deb-inp{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.transaction .trans-details .divi .deb-inp input:nth-child(1),
+.transaction .trans-details .divi .deb-inp input:nth-child(2){
+    width: 80px;
+}
+.transaction .trans-details .divi input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 3px 9px;
+    color:rgba(96, 92, 92, 0.805);
+}
+.transaction .trans-details .divi .holder input{
+    text-transform: uppercase;
+}
+
+.transaction .trans-details .divi input::placeholder{
+    font-size: 17px;
+    color: rgb(197, 196, 196);
+}
+.transaction .trans-details .divi .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}

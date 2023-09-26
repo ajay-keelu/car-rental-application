@@ -1,0 +1,105 @@
+.userlanding{
+    height: calc(100vh - 20px);
+    box-sizing: border-box;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.1), -12px 0 12px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    position: relative;
+    padding: 5px 10px;
+    overflow: scroll;
+    min-width: 82vw;
+}
+.userlanding .search{
+    width: calc(100vh - 200px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.userlanding .search input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background:transparent;
+    height: 40px;
+    font-weight: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(148, 147, 147);
+    font-size: 17px;
+}
+
+.userlanding .search .btn{
+    font-size: 14px;
+}
+.userlanding .search input::placeholder{
+    color: rgb(173, 173, 173);
+}
+.userlanding .search .searchCar{
+    width: 50px;
+    height: 40px;
+    padding: 10px 15px;
+    display: flex;
+    gap:20px;
+    font-size: 20px;
+    border-radius: 30px;
+    align-items: center;
+    border: 1px solid lightgrey;
+    transition: width .5s ease-in-out;
+}
+.userlanding .search .searchca{
+    border: 1px solid rgba(122, 121, 121,.8);
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    gap:20px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width .5s ease-in-out;
+}
+.userlanding .carImages{
+    min-height: 150px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.userlanding .carDiv{
+    box-shadow:-5px 10px 14px rgba(0,0,0,0.2),
+                5px -10px 14px rgba(0,0,0,0.2);
+    height: 200px;
+    width: 500px;
+    margin: 40px 20px;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.userlanding .carDiv .carImg{
+    height: 240px;
+    width: 225px;
+    transform: translateY(-18px);
+}
+.userlanding .carDiv .carImg img{
+    height: 100%;
+    width: 225px;
+    border-radius: 10px;
+    
+}
+.userlanding .carDiv .carDetail{
+    height:200px;
+    width: 300px;
+    background: rgb(16, 16, 88);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    color:white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.userlanding .carDiv .carDetail th,
+.userlanding .carDiv .carDetail td{
+    color: white;
+    font-weight: 500;
+}

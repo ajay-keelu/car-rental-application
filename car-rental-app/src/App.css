@@ -1,0 +1,32 @@
+.booking-table,
+.payment-table{
+  height: calc(95vh) !important;
+  overflow: scroll;
+  margin-top: 30px;
+}
+.booking-table::-webkit-scrollbar,
+.payment-table::-webkit-scrollbar{
+  width: 5px;
+  background: rgb(222, 221, 221);
+  display: none;
+}
+
+.payment-table table,
+.booking-table table{
+  border: 1px solid rgb(152, 151, 151) !important;
+  border-radius: 5px !important;
+}
+.booking-table th,
+.payment-table th{
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: rgb(94, 91, 91);
+}
+
+.booking-table td,
+.payment-table td{
+  color: rgb(125, 125, 125);
+  padding: 10px 20px;
+}

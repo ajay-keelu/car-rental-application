@@ -1,0 +1,101 @@
+.signup{
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .signup .signText{
+    transform: translateX(-50px);
+    color:#000d6b;
+    font-weight:700;
+  }
+  .signup .signup-input{
+    min-height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px 10px;
+    box-shadow: 8px 10px 15px rgba(182, 181, 181, 0.766),-8px -10px 15px rgba(176, 175, 175, 0.772);
+  }
+  .signup .signup-input .signup-div{
+    min-height: 50px;
+    width: 450px;
+    position: relative;
+    margin: 20px 10px;
+  }
+  .signup .signup-input .signup-div .cont-spac{
+    min-height: 50px;
+    width: 450px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:  2px solid lightgrey;
+    z-index: 1;
+  }
+  .signup .signup-input .signup-div span{
+    position: absolute;
+    top: 10px;
+    padding: 0px 10px;
+    left: 10px;
+    color: rgb(146, 143, 143);
+    background: #fff;
+    z-index: -20;
+    transition: all .2s ease;
+  } 
+  .signup .signup-input .signup-div .cont-spac:focus ~ span{
+    top:-10px;
+    transform: scale(0.8);
+    z-index: 1;
+    border-left:  2px solid lightgrey;
+    border-right:  2px solid lightgrey;
+  }
+  .signup .cont-spac::placeholder{
+    display: block;
+    font-size: 16px;
+    color: rgb(179, 177, 177);
+  }
+  .signup .cont-spac:focus::placeholder{
+    /* display: none; */
+    font-size: 0px !important;
+  }
+  .signup .texta{
+    min-height: 100px !important;
+  }
+  .signupSubmit{
+    background: #1428bd;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #e7e3e3;
+    margin-top: 10px;
+    border-radius: 8px;
+    position: absolute;
+    right:0px;
+    height: 45px;
+    font-weight: bold;
+  }
+  .signupSubmit:hover{
+    background:#000d6b ;
+    color: #fff;
+
+  }
+  .password-icon{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    cursor: pointer;
+    background: rgba(211, 211, 211, 0.534);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }

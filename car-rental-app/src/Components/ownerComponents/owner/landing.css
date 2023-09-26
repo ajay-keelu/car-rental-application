@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    text-align:center;
+}
+tr th,
+tr td{
+    text-align: left;
+}
+input{
+    text-align: left;
+}
+.landing{
+    position:relative;
+    height: calc(100vh - 20px);
+    width: calc(100vw-20px) !important;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f4f4f5b0;
+    overflow-y: scroll;
+}
+.ownerDashboard .landing .head{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.ownerDashboard .landing .division{
+    width: 75%;
+}
+.ownerDashboard .landing .firstFlex{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-around;
+}
+.ownerDashboard .landing .secFlex{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+}
+.ownerDashboard .landing .firstFlex .details{
+    height: 180px;
+    cursor: pointer;
+    width: 180px;
+    background: rgba(255, 252, 252, 0.959);
+    border-radius: 5px;
+    box-shadow: 0px -8px 13px 0px rgba(228, 225, 225, 0.74),
+                0px 8px 13px 0px rgba(228, 225, 225, 0.74);
+}
+.ownerDashboard .landing .secFlex .details{
+    cursor: pointer;
+    height: 200px;
+    margin:20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px -8px 13px 0px rgba(228, 225, 225, 0.74),
+                0px 8px 13px 0px rgba(228, 225, 225, 0.74);
+}
+.landing .head .oneDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.ownerDashboard .landing .firstFlex .details .secDiv {
+    color: rgb(67, 160, 247);
+}
+
+.ownerDashboard .landing .details  span{
+    font-size: 25px !important;
+}
+.clrBlue{
+    
+    color: rgb(67, 160, 247);
+}
+.fa-big{
+    font-size: 56px;
+}
+.ownerDashboard .landing .firstFlex .details .secDiv .fa-dollar-sign{
+    color: rgb(67, 160, 247);
+    font-size: 15px;
+}
+.ownerDashboard .landing .firstFlex .details .fa-plus{
+    font-size: 12px;
+}
+.ownerDashboard .landing .firstFlex .details .oDiv {
+    color: rgb(57, 82, 114);
+}
+.ownerDashboard .landing .firstFlex .details .thirdDiv{
+    color: rgb(173, 171, 171);
+    font-size: 20px;
+}
+.ownerDashboard .landing .secFlex .details img{
+    height: 98%;
+    padding: 10px;
+    width: 98%;
+}
+
+.landing .carlist{
+    margin-top: 20px;
+}
+.landing .carlist .all-cars{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.landing .carlist .all-cars .carDiv {
+    height: 200px;
+    border-radius: 8px;
+    background: rgba(240, 237, 237, 0.863);
+    cursor: pointer;
+    position: relative;
+    padding: 2px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 7px 12px 0px lightgrey,
+                0px -7px 12px 0px lightgrey;
+    justify-content: center;
+}
+.landing .carlist .all-cars img{
+    height: 180px;
+    width: 240px;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+}
+
+.landing .carlist .all-cars .carname{
+    position: absolute;
+    color: rgba(253, 253, 253, 0.822);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: rgba(82, 81, 81, 0.616);
+    border-radius: 30px;
+    bottom: 15px;
+    display: none;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.landing .carlist .all-cars .carDiv:hover .carname{
+    display: block;
+}

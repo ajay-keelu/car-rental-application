@@ -1,0 +1,103 @@
+.cardetails{
+    position:relative;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 220px);
+    border-radius: 10px;
+    padding: 10px;
+    background: #f4f4f5b0;
+    overflow-y: scroll;
+}
+.cardetails .carlist .all-cars{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.carlist .all-cars .carDiv {
+    height: 200px;
+    border-radius: 8px;
+    background: rgba(240, 237, 237, 0.863);
+    cursor: pointer;
+    padding: 2px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 7px 12px 0px lightgrey,
+                0px -7px 12px 0px lightgrey;
+    justify-content: center;
+}
+.cardetails .carlist .all-cars img{
+    height: 180px;
+    width: 240px;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+}
+
+.cardetails .carlist .all-cars .carDiv:hover{
+    animation: boxShadow .8s infinite  ease-in-out;
+}
+
+.cardetails .carlist .all-cars .carDiv:hover img{
+    scale: 1.03;
+}
+@keyframes boxShadow {
+    0%{
+        box-shadow: 0px 7px 19px 0px lightgrey,
+                0px -7px 19px 0px lightgrey;
+    }
+    50%{
+        box-shadow: 0px 7px 15px 0px rgba(187, 186, 186, 0.705),
+                0px -7px 15px 0px rgba(177, 176, 176, 0.596);
+    }
+    75%{
+        box-shadow: 0px 7px 16px 0px rgba(115, 95, 121, 0.733),
+                0px -7px 16px 0px rgba(121, 121, 163, 0.623);
+    }
+    100%{
+        box-shadow: 0px 7px 19px 0px lightgrey,
+                0px -7px 19px 0px lightgrey;
+    }
+}
+.cardetails .carHead{
+    height: 60px;
+    /* background: red; */
+    margin: 15px 0px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.cardetails .carHead .text{
+    color: #262f72;
+    cursor: pointer;
+}
+
+.cardetails .carHead .text h2{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardetails .carHead .addRem{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.cardetails .carHead .addRem button{
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius:5px;
+    text-transform: uppercase;
+    background: rgb(10, 245, 49);
+}
+.cardetails .carHead .addRem button:hover{
+    background: rgb(13, 187, 42);
+}

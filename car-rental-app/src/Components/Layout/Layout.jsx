@@ -8,21 +8,19 @@
 
 // import Routers from "../../routers/Router";
 
-
 // const Layout = () =>{
 //     return  <Fragment>
 //         <Header/>
 //         <div>
-// <Routers/>            
+// <Routers/>
 //             <Main/>
 //              {/* <FormSideBar/> */}
 //             <CarForm/>
 //             <Home/>
-            
-//         </div>
-       
 
-//     <Footer/> 
+//         </div>
+
+//     <Footer/>
 //     </Fragment>
 // }
 
@@ -41,9 +39,8 @@ const Layout = () => {
       <Header />
       {/* <Main/> */}
       <div>
-      <Routers/> 
+        <Routers />
       </div>
-    
       <Footer />
     </Fragment>
   );

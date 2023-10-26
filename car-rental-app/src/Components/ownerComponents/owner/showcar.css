@@ -1,18 +1,20 @@
-.showcar{
-    min-height:80vh;
-    width:100%;
+.showcar {
+    min-height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap:50px;
+    gap: 50px;
 }
-.showcar img{
+
+.showcar img {
     height: 250px !important;
     width: 300px !important;
     border-radius: 20px !important;
 }
+
 .showcar table td,
-.showcar table th{
+.showcar table th {
     padding: 10px 25px;
 }
